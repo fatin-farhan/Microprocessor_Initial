@@ -1,7 +1,7 @@
 # Microprocessor_Initial
 Setting up NXP MIMXRT1020EVK for DNN
 
-#Installing Bazelisk
+# Installing Bazelisk
     curl -Lo bazel https://github.com/bazelbuild/bazelisk/releases/latest/download/bazelisk-linux-amd64
     chmod +x bazel
     sudo mv bazel /usr/local/bin/bazel
