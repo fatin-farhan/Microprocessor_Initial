@@ -27,3 +27,30 @@ Setting up NXP MIMXRT1020EVK for DNN
 
 # Bringing Up on a New Platform
     python3 tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py -e hello_world -e person_detection /tmp/tflm-tree
+    python3 tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py -e hello_world --makefile_options="TARGET=cortex_m_generic TARGET_ARCH=cortex-m7" /tmp/tflm-cortex-m7
+
+## Add *tflm-cortex-m7* to Project Directory.
+## Include paths
+Project->Properties->C/C++ General->Paths and Symbols ->Includes
+- tflm-cortex-m7
+- tflm-cortex-m7/tensorflow
+- tflm-cortex-m7/tensorflow/lite
+- tflm-cortex-m7/tensorflow/lite/micro
+- tflm-cortex-m7/third_party/flatbuffers/include
+- tflm-cortex-m7/third_party/flatbuffers/gemmlowp
+- tflm-cortex-m7/third_party/kissfft
+- tflm-cortex-m7/third_party/ruy
+
+## Add Preprocessor defines
+Project->Properties->C/C++ General->Paths and Symbols ->Symbols-> GNU C++
+- TF_LITE_STATIC_MEMORY
+
+## Set C++ Standard
+Project->Properties->C/C++ Build->Settings->Tool Settings->MCU C++ Compiler ->Dialect
+- Set language standard to ISO C++17 or,
+- Miscellaneous ->-std=c++17
+## Linker flag for float print
+-u_print_float
+## Build and Next Step
+
+# Write source/tflm_hello_world.cc and source/MIMXRT1020_Project_Test.cpp
