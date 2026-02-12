@@ -51,6 +51,10 @@ Project->Properties->C/C++ Build->Settings->Tool Settings->MCU C++ Compiler ->Di
 - Miscellaneous ->-std=c++17
 ## Linker flag for float print
 -u_print_float
-## Build and Next Step
+## Including and excluding
 
+Check if files are excluded from build or not. If excluded, include them.
+Exclide tflm-cortex-m7/tensorflow/lite/micro/cortex_m_generic/micro_time.cc and add a dummy micro_time.cc inside source/
 # Write source/tflm_hello_world.cc and source/MIMXRT1020_Project_Test.cpp
+Write a program.cc and a header program.h
+Call the program from main.cpp
