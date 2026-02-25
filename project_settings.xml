@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+  <section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+    <language id="org.eclipse.cdt.core.g++" name="C++ Source File">
+      <includepath workspace_path="true">/${ProjName}/board</includepath>
+      <includepath workspace_path="true">/${ProjName}/source</includepath>
+      <includepath workspace_path="true">/${ProjName}/device</includepath>
+      <includepath workspace_path="true">/${ProjName}/device/periph</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities/debug_console_lite</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities/str</includepath>
+      <includepath workspace_path="true">/${ProjName}/drivers</includepath>
+      <includepath workspace_path="true">/${ProjName}/component/uart</includepath>
+      <includepath workspace_path="true">/${ProjName}/CMSIS</includepath>
+      <includepath workspace_path="true">/${ProjName}/CMSIS/m-profile</includepath>
+      <includepath workspace_path="true">/${ProjName}/xip</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow/lite</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow/lite/micro</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/flatbuffers/include</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/gemmlowp</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/kissfft</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/ruy</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/examples/hello_world</includepath>
+    </language>
+    <language id="org.eclipse.cdt.core.gcc" name="C Source File">
+      <includepath workspace_path="true">/${ProjName}/board</includepath>
+      <includepath workspace_path="true">/${ProjName}/source</includepath>
+      <includepath workspace_path="true">/${ProjName}/device</includepath>
+      <includepath workspace_path="true">/${ProjName}/device/periph</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities/debug_console_lite</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities/str</includepath>
+      <includepath workspace_path="true">/${ProjName}/drivers</includepath>
+      <includepath workspace_path="true">/${ProjName}/component/uart</includepath>
+      <includepath workspace_path="true">/${ProjName}/CMSIS</includepath>
+      <includepath workspace_path="true">/${ProjName}/CMSIS/m-profile</includepath>
+      <includepath workspace_path="true">/${ProjName}/xip</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow/lite</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow/lite/micro</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/flatbuffers/include</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/gemmlowp</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/kissfft</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/ruy</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/examples/hello_world</includepath>
+    </language>
+    <language id="org.eclipse.cdt.core.com.crt.mcu.assembly" name="Additional Assembly Source Files">
+      <includepath workspace_path="true">/${ProjName}/board</includepath>
+      <includepath workspace_path="true">/${ProjName}/source</includepath>
+      <includepath workspace_path="true">/${ProjName}/device</includepath>
+      <includepath workspace_path="true">/${ProjName}/device/periph</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities/debug_console_lite</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities/str</includepath>
+      <includepath workspace_path="true">/${ProjName}/drivers</includepath>
+      <includepath workspace_path="true">/${ProjName}/component/uart</includepath>
+      <includepath workspace_path="true">/${ProjName}/CMSIS</includepath>
+      <includepath workspace_path="true">/${ProjName}/CMSIS/m-profile</includepath>
+      <includepath workspace_path="true">/${ProjName}/xip</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow/lite</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow/lite/micro</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/flatbuffers/include</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/gemmlowp</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/kissfft</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/ruy</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/examples/hello_world</includepath>
+    </language>
+    <language id="org.eclipse.cdt.core.assembly" name="Assembly Source File">
+      <includepath workspace_path="true">/${ProjName}/board</includepath>
+      <includepath workspace_path="true">/${ProjName}/source</includepath>
+      <includepath workspace_path="true">/${ProjName}/device</includepath>
+      <includepath workspace_path="true">/${ProjName}/device/periph</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities/debug_console_lite</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities/str</includepath>
+      <includepath workspace_path="true">/${ProjName}/drivers</includepath>
+      <includepath workspace_path="true">/${ProjName}/component/uart</includepath>
+      <includepath workspace_path="true">/${ProjName}/CMSIS</includepath>
+      <includepath workspace_path="true">/${ProjName}/CMSIS/m-profile</includepath>
+      <includepath workspace_path="true">/${ProjName}/xip</includepath>
+      <includepath workspace_path="true">/${ProjName}/utilities</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow/lite</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/tensorflow/lite/micro</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/flatbuffers/include</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/gemmlowp</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/kissfft</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/third_party/ruy</includepath>
+      <includepath workspace_path="true">/${ProjName}/tflm-tree-hello-world/examples/hello_world</includepath>
+    </language>
+    <language name="Object File"/>
+  </section>
+  <section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+    <language id="org.eclipse.cdt.core.g++" name="C++ Source File">
+      <macro>
+        <name>CPU_MIMXRT1021DAG5A</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>PRINTF_FLOAT_ENABLE</name>
+        <value>1</value>
+      </macro>
+      <macro>
+        <name>CPU_MIMXRT1021DAG5A_cm7</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>MCUXPRESSO_SDK</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>XIP_EXTERNAL_FLASH</name>
+        <value>1</value>
+      </macro>
+      <macro>
+        <name>XIP_BOOT_HEADER_ENABLE</name>
+        <value>1</value>
+      </macro>
+      <macro>
+        <name>SDK_DEBUGCONSOLE</name>
+        <value>1</value>
+      </macro>
+      <macro>
+        <name>__MCUXPRESSO</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>__USE_CMSIS</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>DEBUG</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>__NEWLIB__</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>TF_LITE_STATIC_MEMORY</name>
+        <value/>
+      </macro>
+    </language>
+    <language id="org.eclipse.cdt.core.gcc" name="C Source File">
+      <macro>
+        <name>__NEWLIB__</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>PRINTF_FLOAT_ENABLE</name>
+        <value>1</value>
+      </macro>
+      <macro>
+        <name>CPU_MIMXRT1021DAG5A</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>CPU_MIMXRT1021DAG5A_cm7</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>MCUXPRESSO_SDK</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>XIP_EXTERNAL_FLASH</name>
+        <value>1</value>
+      </macro>
+      <macro>
+        <name>XIP_BOOT_HEADER_ENABLE</name>
+        <value>1</value>
+      </macro>
+      <macro>
+        <name>SDK_DEBUGCONSOLE</name>
+        <value>1</value>
+      </macro>
+      <macro>
+        <name>__MCUXPRESSO</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>__USE_CMSIS</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>DEBUG</name>
+        <value/>
+      </macro>
+      <macro>
+        <name>TF_LITE_STATIC_MEMORY</name>
+        <value/>
+      </macro>
+    </language>
+    <language id="org.eclipse.cdt.core.com.crt.mcu.assembly" name="Additional Assembly Source Files"/>
+    <language id="org.eclipse.cdt.core.assembly" name="Assembly Source File"/>
+    <language name="Object File"/>
+  </section>
+</cdtprojectproperties>

@@ -27,19 +27,20 @@ Setting up NXP MIMXRT1020EVK for DNN
 
 # Bringing Up on a New Platform
     python3 tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py -e hello_world -e person_detection /tmp/tflm-tree
-    python3 tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py -e hello_world --makefile_options="TARGET=cortex_m_generic TARGET_ARCH=cortex-m7" /tmp/tflm-cortex-m7
+    python3 tensorflow/lite/micro/tools/project_generation/create_tflm_tree.py -e hello_world --makefile_options="TARGET=cortex_m_generic TARGET_ARCH=cortex-m7" /tmp/tflm-tree-hello-world
 
-## Add *tflm-cortex-m7* to Project Directory.
+## Add *tflm-tree-hello-world* to Project Directory.
 ## Include paths
 Project->Properties->C/C++ General->Paths and Symbols ->Includes
-- tflm-cortex-m7
-- tflm-cortex-m7/tensorflow
-- tflm-cortex-m7/tensorflow/lite
-- tflm-cortex-m7/tensorflow/lite/micro
-- tflm-cortex-m7/third_party/flatbuffers/include
-- tflm-cortex-m7/third_party/flatbuffers/gemmlowp
-- tflm-cortex-m7/third_party/kissfft
-- tflm-cortex-m7/third_party/ruy
+- /${ProjName}/tflm-tree-hello-world/
+- /${ProjName}/tflm-tree-hello-world/tensorflow
+- /${ProjName}/tflm-tree-hello-world/tensorflow/lite
+- /${ProjName}/tflm-tree-hello-world/tensorflow/lite/micro
+- /${ProjName}/tflm-tree-hello-world/third_party/flatbuffers/include
+- /${ProjName}/tflm-tree-hello-world/third_party/gemmlowp
+- /${ProjName}/tflm-tree-hello-world/third_party/kissfft
+- /${ProjName}/tflm-tree-hello-world/third_party/ruy
+- /${ProjName}/tflm-tree-hello-world/examples/hello_world
 
 ## Add Preprocessor defines
 Project->Properties->C/C++ General->Paths and Symbols ->Symbols-> GNU C++
