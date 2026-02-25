@@ -52,7 +52,9 @@ Project->Properties->C/C++ Build->Settings->Tool Settings->MCU C++ Compiler ->Di
 - Miscellaneous ->-std=c++17
 ## Linker flag for float print
 Project Properties → C/C++ Build → Settings → MCU C Compiler → Preprocessor
+Project Properties → C/C++ Build → Settings → MCU C++ Compiler → Preprocessor
 PRINTF_FLOAT_ENABLE=1
+PRINTF_ADVANCED_ENABLE=1
 -u_print_float
 ## Including and excluding
 
