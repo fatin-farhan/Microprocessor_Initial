@@ -1,3 +1,31 @@
+## Step 0: File Structure Idea
+tflite-micro/
+├── tensorflow/
+│ └── lite/
+│ └── micro/
+│ ├── models/
+│ │ ├── mobilenetv2_int8.tflite
+│ │ └── BUILD
+│ │
+│ └── examples/
+│ └── mobilenetv2/
+│ ├── BUILD
+│ ├── main.cc
+│ ├── main_functions.cc
+│ ├── main_functions.h
+│ ├── model_settings.h
+│ ├── model_settings.cc
+│ ├── labels.h
+│ ├── labels.cc
+│ ├── detection_responder.h
+│ ├── detection_responder.cc
+│ ├── image_provider.h
+│ ├── image_provider.cc
+│ └── testdata/
+│ └── cat.bmp
+
+
+
 # Microprocessor_Initial
 Setting up NXP MIMXRT1020EVK for DNN
 
