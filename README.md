@@ -26,8 +26,104 @@ tflite-micro/
 │                   └── testdata/
 │                       └── cat.bmp
 ```
+## Step 1 Download a quantized MobileNetV2 .tflite
+```bash
+python3 -m venv tf
+source tf/bin/activate
+pip install --upgrade pip
+pip install tensorflow pillow numpy
+python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+```
 
+```bash
+import tensorflow as tf
 
+# Must be 224x224 if include_top=True with imagenet weights (Keras apps)
+model = tf.keras.applications.MobileNetV2(
+    input_shape=(224, 224, 3),
+    include_top=True,
+    weights="imagenet",
+)
+
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+# Keep it simple first (float32 model)
+tflite_model = converter.convert()
+
+out_path = "mobilenet_v2_224_imagenet.tflite"
+with open(out_path, "wb") as f:
+    f.write(tflite_model)
+
+print(f"Wrote {out_path}")
+
+```
+## Step 2 
+
+``` colab
+!pip -q install tensorflow tensorflow-datasets
+import tensorflow as tf
+import tensorflow_datasets as tfds
+
+IMG_SIZE = 224
+REP_SAMPLES = 200
+
+def preprocess(image, label):
+    image = tf.image.resize(image, (IMG_SIZE, IMG_SIZE))
+    image = tf.cast(image, tf.float32)
+    image = tf.keras.applications.mobilenet_v2.preprocess_input(image)
+    return image, label
+
+dataset = tfds.load("tf_flowers", split="train", as_supervised=True)
+
+calib_ds = (
+    dataset.shuffle(2000)
+           .map(preprocess, num_parallel_calls=tf.data.AUTOTUNE)
+           .batch(1)
+           .take(REP_SAMPLES)
+)
+
+def representative_dataset():
+    for x, _ in calib_ds:
+        yield [x]
+3. Export full-INT8 MobileNetV2 (include_top=True)
+model = tf.keras.applications.MobileNetV2(
+    input_shape=(224,224,3),
+    weights="imagenet",
+    include_top=True
+)
+
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+
+converter.optimizations = [tf.lite.Optimize.DEFAULT]
+converter.representative_dataset = representative_dataset
+
+converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS_INT8]
+
+converter.inference_input_type = tf.int8
+converter.inference_output_type = tf.int8
+
+tflite_model = converter.convert()
+
+with open("mobilenetv2_full_int8_top.tflite","wb") as f:
+    f.write(tflite_model)
+
+print("Model exported")
+4. Verify it is really INT8
+import tensorflow as tf
+
+interpreter = tf.lite.Interpreter(model_path="mobilenetv2_full_int8_top.tflite")
+interpreter.allocate_tensors()
+
+print("Input dtype:", interpreter.get_input_details()[0]["dtype"])
+print("Output dtype:", interpreter.get_output_details()[0]["dtype"])
+print("Input shape:", interpreter.get_input_details()[0]["shape"])
+
+Expected output:
+
+Input dtype: int8
+Output dtype: int8
+Input shape: [1 224 224 3]
+
+```
 
 # Microprocessor_Initial
 Setting up NXP MIMXRT1020EVK for DNN
